@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class WeatherServiceService {
   constructor(private http: HttpClient) {}
   getWeather() {
-    return this.http.get('http://localhost:4000/weather/getWeather');
+    return this.http.get(
+      'https://mighty-badlands-80674.herokuapp.com/weather/getWeather'
+    );
   }
 }
